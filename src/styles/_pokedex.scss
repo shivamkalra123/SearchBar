@@ -1,0 +1,89 @@
+.pokedex {
+  background-color: $bg-color;
+  padding: 3.2rem 3.2rem;
+  .wrapper {
+    align-self: center;
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+    column-gap: 1.95rem;
+    row-gap: 0.9rem;
+  }
+}
+.pokedex-card {
+  position: relative;
+  border-radius: 12px;
+  background-color: $white;
+  width: 20.6rem;
+  height: 22.4rem;
+  border: 1.3px solid $mediumGray;
+  @include flex(space-between, center, column);
+}
+.pokedex-card-id {
+  color: $mediumGray;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.pokedex-card-img {
+  flex: 3;
+}
+.pokedex-card-info {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: $white;
+  @include flex(center, center, column);
+  background-color: $mediumGray;
+  width: 100%;
+  flex: 1;
+}
+
+/* for navbar */
+.navbar {
+  @include flex(center, center, column);
+  padding: 3.2rem 3.2rem;
+}
+.navbar-group {
+  @include flex(space-between, center, row);
+  width: 100%;
+}
+.navbar-logo {
+  @include flex(space-between, center, row);
+}
+
+.logo-icon {
+  width: 4.4rem;
+  margin-right: 2rem;
+}
+.logo-text {
+  font-size: 4.2rem;
+}
+.navbar-filter {
+  outline: none;
+  background: transparent;
+  border: none;
+  img {
+    width: 4rem;
+  }
+}
+.navbar-search {
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  border: 1px solid $mediumGray;
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  @include flex(center, center, row);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  img {
+    width: 2rem;
+  }
+  input {
+    font-size: $header2;
+    padding-left: 2rem;
+    background-color: $white;
+    color: $darkGray;
+    border: none;
+    width: 90%;
+  }
+}

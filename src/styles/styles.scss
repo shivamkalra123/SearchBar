@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$header1: 3.2rem;
+$header2: 1.8rem;
+$header4: 1.6rem;
+$text: 1.2rem;
+$main-font: 'Poppins', sans-serif;
+$bg-color: #f7f7f7;
+$lightGray: #e0e0e0;
+$mediumGray: #666;
+$darkGray: #212121;
+$white: #fff;
+
+
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+
+@import "_global";
+@import "_colors";
+@import '_pokedex';
+@import "_pokemon";
